@@ -1,0 +1,15 @@
+.btn {
+    border-radius: 4rem;
+}
+
+.wbdv-bottom-right-10px {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.welcome-text {
+    width: 800px;
+    height: 200px;
+    margin: 20% 30%;
+}

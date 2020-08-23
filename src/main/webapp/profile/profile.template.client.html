@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet"/>
+
+    <link href="../styles.css" rel="stylesheet"/>
+
+    <link href="profile.style.client.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+<div class="container" content="width=device-width">
+    <h1>Profile</h1>
+    <form>
+
+        <div class="alert alert-success" role="alert">
+            Profile successfully saved
+        </div>
+
+        <div class="form-group row">
+            <label for="username" class="col-md-2 col-form-label">
+                Username
+            </label>
+            <div class="col-sm-10">
+                <input  class="form-control wbdv-field wbdv-username"
+                        id="username"
+                        type="text"
+                        value="Tianqi Li"
+                        readonly
+                        title="Use this username to login"/>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="password" class="col-md-2 col-form-label">
+                Password
+            </label>
+
+            <div class="col-sm-10">
+                <input type="password"
+                       class="form-control wbdv-field wbdv-password"
+                       id="password"
+                       placeholder="**********"
+                       title="input the password you want"/>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="phone" class="col-md-2 col-form-label">
+                Phone
+            </label>
+
+            <div class="col-sm-10">
+                <input type="phone"
+                       class="form-control wbdv-field wbdv-phone"
+                       id="phone"
+                       placeholder="(222) 123-1234"
+                       title="The phone you use"/>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="email" class="col-md-2 col-form-label">
+                Email
+            </label>
+
+            <div class="col-sm-10">
+                <input type="email"
+                       class="form-control wbdv-field wbdv-email"
+                       id="email"
+                       placeholder="li.tianq@husky.neu.edu"
+                       title="The email address you use"/>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="brith" class="col-md-2 col-form-label">
+                Date of birth
+            </label>
+
+            <div class="col-sm-10">
+                <input type="date"
+                       value="2020-05-04"
+                       class="form-control wbdv-field wbdv-dob"
+                       id="brith"
+                       title="The Date of birth for you"/>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="role" class="col-md-2 col-form-label">
+                Role
+            </label>
+
+            <div class="col-sm-10">
+                <select id="role"
+                        class="form-control wbdv-field wbdv-role">
+                    <option value="Faculty">Faculty</option>
+                    <option value="Student">Student</option>
+                    <option selected value="Admin">Admin</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+
+            <div class="col-md-10">
+                <div>
+                    <a href="../profile/profile.template.client.html"
+                       class="btn btn-success btn-block wbdv-button wbdv-update" role="button">
+                        Update
+                    </a>
+                </div>
+                </br>
+                <div>
+                    <a href="/index.html"
+                       class="btn btn-block btn-danger wbdv-button wbdv-logout" role="button">
+                        Logout
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+</body>
+</html>

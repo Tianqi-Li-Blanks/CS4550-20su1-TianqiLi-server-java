@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Editor</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet"/>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"/>
+
+    <link href="../styles.css" rel="stylesheet"/>
+
+    <link href="course-editor.style.client.css"
+          rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar justify-content-between">
+        <a href="../course-list/course-list.template.client.html"
+           class="wbdv-course-editor wbdv-close btn btn-danger"
+           role="button">
+            <i class="fa fa-times"></i>
+        </a>
+
+        <h1 class=" wbdv-course-title">CS4550-WebDev</h1>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+            <label class="btn btn-secondary ">
+                <input type="radio" name="options" id="option1"> Bulid
+            </label>
+            <label class="wbdv-page-tab btn btn-secondary active">
+                <input type="radio" name="options" id="option2" checked> Page
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Theme
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option4"> Store
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option5"> Apps
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option6"> Settings
+            </label>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-secondary my-2 mr-sm-0">
+                <i class="fa fa-plus"></i>
+            </button>
+        </form>
+    </nav>
+
+    <div class="row">
+        <div class="col-4 bg-dark">
+            <div >
+                </br>
+                <ul class="wbdv-module-list list-group">
+                    <li class="wbdv-module-item list-group-item">
+                        <h7 class="wbdv-module-item-title">Module 1 - jQuery</h7>
+                        <button class="wbdv-module-item-delete-btn float-right btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </li>
+                    </br>
+                    <li class="wbdv-module-item list-group-item active">
+                        <h7 class="wbdv-module-item-title">Module 2 - React</h7>
+                        <button class="wbdv-module-item-delete-btn float-right btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </li>
+
+                    </br>
+                    <li class="wbdv-module-item list-group-item ">
+                        <h7 class="wbdv-module-item-title">Module 3 - Redux</h7>
+                        <button class="wbdv-module-item-delete-btn float-right btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </li>
+                    </br>
+                    <li class="wbdv-module-item list-group-item">
+                        <h7 class="wbdv-module-item-title">Module 4 - Native</h7>
+                        <button class="wbdv-module-item-delete-btn float-right btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </li>
+                    </br>
+                    <li class="wbdv-module-item list-group-item">
+                        <h7 class="wbdv-module-item-title">Module 5 - Angular</h7>
+                        <button class="wbdv-module-item-delete-btn float-right btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </li>
+                    </br>
+                    <li class="wbdv-module-item list-group-item">
+                        <h7 class="wbdv-module-item-title">Module 6 - Node</h7>
+                        <button class="wbdv-module-item-delete-btn float-right btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </li>
+                    </br>
+                    <li class="wbdv-module-item list-group-item">
+                        <h7 class="wbdv-module-item-title">Module 7 - Mongo</h7>
+                        <button class="wbdv-module-item-delete-btn float-right btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </li>
+                    </br>
+                    <button class="wbdv-module-item-add-btn btn btn-secondary my-2 mr-sm-0">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </ul>
+                </br>
+            </div>
+        </div>
+        <div class="col-8 bg-light">
+            </br>
+            <div>
+                <ul class="nav nav-pills wbdv-topic-pill-list">
+                    <li class="nav-item wbdv-topic-pill">
+                        <button type="button" class="btn btn-secondary mr-sm-2 ">Topic 1</button>
+                    </li>
+                    <li class="nav-item wbdv-topic-pill-list">
+                        <button type="button" class="btn btn-secondary mr-sm-2 active">Topic 2</button>
+                    </li>
+                    <li class="nav-item wbdv-topic-pill-list">
+                        <button type="button" class="btn btn-secondary mr-sm-2">Topic 3</button>
+                    </li>
+                    <li class="nav-item wbdv-topic-pill-list">
+                        <button type="button" class="btn btn-secondary mr-sm-2">Topic 4</button>
+                    </li>
+
+                    <button class="wbdv-topic-add-btn btn btn-secondary mr-sm-2" type="button">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </ul>
+            </div>
+
+
+            <br/>
+
+            <form class="form-inline float-right">
+                <button class="btn btn-success mr-sm-2" type="button">
+                    <a>saved</a>
+                </button>
+                <h5 class="mr-sm-2">
+                    Preview
+                </h5>
+                <i class="fa fa-toggle-off fa-2x my-2 my-sm-0" aria-hidden="true"></i>
+            </form>
+
+            <br/>
+            <br/>
+            <div class="card" style="width: 45rem; height:30rem">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Heading Widget
+                        <form class="form-inline float-right">
+                            <button class=" btn-warning btn-sm mr-sm-2">
+                                <i class="fa fa-arrow-up"></i>
+                            </button>
+                            <button class=" btn-warning btn-sm mr-sm-2">
+                                <i class="fa fa-arrow-down"></i>
+                            </button>
+
+                            <select class="custom-select mr-sm-2">
+                                <option value="Heading">Heading</option>
+                                <option value="Heading">Heading</option>
+                                <option selected value="Heading">Heading</option>
+                            </select>
+                            <button class="btn btn-danger btn-sm mr-sm-2">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </form>
+                    </h3>
+
+                    <input  class="form-control"
+                            type="text"
+                            placeholder="Heading text"
+                            title="the heading text"/>
+                    </br>
+                    <div>
+                        <select class="form-control custom-select">
+                            <option selected value="Heading">Heading 1</option>
+                            <option value="Heading">Heading 2</option>
+                            <option value="Heading">Heading 3</option>
+                        </select>
+                    </div>
+                    </br>
+
+                    <input  class="form-control"
+                            type="text"
+                            placeholder="Widget name"
+                            title="the Widget name"/>
+                    </br>
+                    </br>
+                    </br>
+                    <h5>Preview</h5>
+                    </br>
+                    <h1>Heading text</h1>
+                </div>
+
+            </div>
+
+            <button class="btn-danger float-right my-2 mr-sm-0" type="button">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
